@@ -1,0 +1,14 @@
+[versions]
+agp = "8.5.0"
+core = "1.0.0"
+kotlin = "2.0.0"
+
+[libraries]
+baldomero-napoli-core = { module = "com.baldomero.napoli.eventplanner:core", version.ref = "core" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
